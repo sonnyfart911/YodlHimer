@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — YodlHimer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="brand">
+      <img src="logo.svg" alt="YodlHimer logo">
+      <div><h1 style="margin:0;font-size:15px">YodlHimer</h1><div style="font-size:12px;color:#9a6f85">contact</div></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="fade-up">
+      <h2>Get in touch</h2>
+      <p>If you want email contact, paste your email below (or replace this with a contact form service).</p>
+
+      <div style="margin-top:16px;">
+        <a class="btn" href="mailto:your@email">
+          Send an email
+        </a>
+      </div>
+
+      <div style="margin-top:18px" class="card">
+        <h4>Replace with a form</h4>
+        <p>To use a form, you can embed services like Netlify Forms, Formspree, or Google Forms. Or connect to a backend.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year4"></span> YodlHimer</footer>
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
