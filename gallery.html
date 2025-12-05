@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — YodlHimer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header container">
+    <div class="brand">
+      <img src="logo.svg" alt="YodlHimer logo">
+      <div><h1 style="margin:0;font-size:15px">YodlHimer</h1><div style="font-size:12px;color:#9a6f85">gallery</div></div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="fade-up">
+      <h2>Gallery</h2>
+      <p>Click any image to open it larger. Replace these sample images by uploading your own to the repo and changing the src values.</p>
+
+      <div class="gallery-grid" style="margin-top:14px">
+        <!-- sample images from picsum (replaceable) -->
+        <div class="gallery-item"><img src="https://picsum.photos/id/1015/600/400" data-large="https://picsum.photos/id/1015/1200/800" alt="Sample 1"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/id/1016/600/400" data-large="https://picsum.photos/id/1016/1200/800" alt="Sample 2"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/id/1025/600/400" data-large="https://picsum.photos/id/1025/1200/800" alt="Sample 3"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/id/1021/600/400" data-large="https://picsum.photos/id/1021/1200/800" alt="Sample 4"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/id/1024/600/400" data-large="https://picsum.photos/id/1024/1200/800" alt="Sample 5"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/id/1031/600/400" data-large="https://picsum.photos/id/1031/1200/800" alt="Sample 6"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <img id="lightbox-img" src="" alt="Large view">
+  </div>
+
+  <footer class="footer">© <span id="year3"></span> YodlHimer</footer>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
